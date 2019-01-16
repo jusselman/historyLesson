@@ -1,0 +1,217 @@
+.header {
+  height: 100vh;
+  // background-image: linear-gradient(to left, red, blue);
+  // background-color: red;
+  background-image: url('../img/bg-main.jpg');
+
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  // transition: all 5s ease;
+
+  &__logo-box {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    padding: 0.25rem;
+    transform: rotateY(0);
+    transition: 0.5s all ease;
+
+    &.showLogo {
+      transform: rotateY(180deg);
+      background-color: rgba(red, 0.5);
+      z-index: 3;
+    }
+  }
+  &__logo {
+    height: 3rem;
+  }
+
+  &__logo-box:hover {
+    transform: rotateY(180deg);
+    background-color: rgba(red, 0.5);
+  }
+
+  .burgerMenu {
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    transform: rotate(0);
+    z-index: 3;
+    transition: 0.5s all ease;
+
+    .menu-line {
+      height: 3px;
+      width: 2.5rem;
+      background-color: #fff;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      transform: rotate(0);
+      transition: 0.3s all ease;
+    }
+
+    &.flipped {
+      transform: rotate(180deg);
+      background-color: rgba(red, 0.5);
+
+      .menu-line {
+        //line 1 hamburger //
+        &:nth-child(1) {
+          transform: rotate(45deg) translate(0.5rem, 0.5rem);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(3) {
+          transform: rotate(-45deg) translate(0.5rem, -0.5rem);
+        }
+      }
+    }
+  }
+
+  &__title-box {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(0) skewY(0);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    // width: 70%;
+    border-radius: 0.5rem;
+    display: inline-block;
+    padding: 0 1rem;
+    transform-origin: 180% 180%;
+    transition: all 0.5s ease;
+
+    h1 {
+      transition: all 0.5s ease;
+    }
+  }
+
+  &__title-box:hover {
+    transform: translate(-50%, -50%) rotateX(20deg) skewY(1deg);
+    // transform-origin: 45% 45%;
+    background-color: rgba(red, 0.2);
+
+    h1 {
+      color: #000;
+    }
+  }
+
+  &__year-input {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 10rem;
+    display: block;
+    border: none;
+    font-size: 3rem;
+    background: rgb(106, 1, 1);
+    color: #fff;
+    text-align: center;
+  }
+
+  &__year-input:focus {
+    outline: none;
+  }
+
+  // &__btn {
+  //   position: absolute;
+  //   top: 70%;
+  //   left: 50%;
+  //   transform: translate(-50%, 0);
+  //   border: none;
+  //   font-size: 2rem;
+  //   color: rgb(106, 1, 1);
+  //   background: #fff;
+  // }
+
+  // &__btn:focus {
+  //   outline: 0;
+  // }
+
+  &__answer-display {
+    top: 70%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    font-family: inherit;
+  }
+
+  .learn-more {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 auto;
+    width: auto;
+    display: block;
+    transition: all 0.5s ease;
+  }
+
+  .learn-more:hover {
+    background-color: rgba(red, 0.5);
+  }
+}
+
+.bgTrans {
+  height: 95vh;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  background-image: url('../img/rome-bg.jpg');
+
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 5s ease;
+
+  &__logo-box {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+  }
+  &__logo {
+    height: 4rem;
+  }
+  &__title-box {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__answer-display {
+    top: 70%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    font-family: inherit;
+  }
+}
+
+.textAlt {
+  color: #fff;
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+
+  animation-timing-function: ease-in;
+}

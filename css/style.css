@@ -1,0 +1,242 @@
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden; }
+
+.heading-primary--main {
+  display: block;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 1rem;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  /* animation-iteration-count: 3; */
+  animation-timing-function: ease-in; }
+
+.heading-primary--sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  /* animation-iteration-count: 3; */
+  animation-timing-function: ease-in; }
+
+.heading-secondary {
+  margin: 0 auto;
+  padding: 1rem; }
+
+.header {
+  height: 100vh;
+  background-image: url("../img/bg-main.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  .header__logo-box {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    padding: 0.25rem;
+    transform: rotateY(0);
+    transition: 0.5s all ease; }
+    .header__logo-box.showLogo {
+      transform: rotateY(180deg);
+      background-color: rgba(255, 0, 0, 0.5);
+      z-index: 3; }
+  .header__logo {
+    height: 3rem; }
+  .header__logo-box:hover {
+    transform: rotateY(180deg);
+    background-color: rgba(255, 0, 0, 0.5); }
+  .header .burgerMenu {
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    transform: rotate(0);
+    z-index: 3;
+    transition: 0.5s all ease; }
+    .header .burgerMenu .menu-line {
+      height: 3px;
+      width: 2.5rem;
+      background-color: #fff;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      transform: rotate(0);
+      transition: 0.3s all ease; }
+    .header .burgerMenu.flipped {
+      transform: rotate(180deg);
+      background-color: rgba(255, 0, 0, 0.5); }
+      .header .burgerMenu.flipped .menu-line:nth-child(1) {
+        transform: rotate(45deg) translate(0.5rem, 0.5rem); }
+      .header .burgerMenu.flipped .menu-line:nth-child(2) {
+        opacity: 0; }
+      .header .burgerMenu.flipped .menu-line:nth-child(3) {
+        transform: rotate(-45deg) translate(0.5rem, -0.5rem); }
+  .header__title-box {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(0) skewY(0);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    display: inline-block;
+    padding: 0 1rem;
+    transform-origin: 180% 180%;
+    transition: all 0.5s ease; }
+    .header__title-box h1 {
+      transition: all 0.5s ease; }
+  .header__title-box:hover {
+    transform: translate(-50%, -50%) rotateX(20deg) skewY(1deg);
+    background-color: rgba(255, 0, 0, 0.2); }
+    .header__title-box:hover h1 {
+      color: #000; }
+  .header__year-input {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 10rem;
+    display: block;
+    border: none;
+    font-size: 3rem;
+    background: #6a0101;
+    color: #fff;
+    text-align: center; }
+  .header__year-input:focus {
+    outline: none; }
+  .header__answer-display {
+    top: 70%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    font-family: inherit; }
+  .header .learn-more {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 auto;
+    width: auto;
+    display: block;
+    transition: all 0.5s ease; }
+  .header .learn-more:hover {
+    background-color: rgba(255, 0, 0, 0.5); }
+
+.bgTrans {
+  height: 95vh;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  background-image: url("../img/rome-bg.jpg");
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 5s ease; }
+  .bgTrans__logo-box {
+    position: absolute;
+    top: 5rem;
+    left: 5rem; }
+  .bgTrans__logo {
+    height: 4rem; }
+  .bgTrans__title-box {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .bgTrans__answer-display {
+    top: 70%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    font-family: inherit; }
+
+.textAlt {
+  color: #fff;
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in; }
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.75;
+  visibility: hidden;
+  z-index: 2; }
+  .menu-nav {
+    position: relative; }
+  .menu__nav-link {
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #fff;
+    position: relative; }
+  .menu__nav-link:hover {
+    color: black; }
+  .menu.show {
+    visibility: visible; }
+  .menu-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    list-style: none;
+    transform: translate3d(0, -100%, 0);
+    line-height: 2;
+    transition: all 0.5s ease-out; }
+    .menu-nav.show {
+      transform: translate3d(0, 0, 0); }
+
+.btn-main {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1rem; }
+
+.learn-more__link {
+  text-decoration: none;
+  color: inherit; }
+
+.section-events {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  background-color: #fff;
+  color: #000;
+  grid-template-rows: 1fr 1fr 1fr 1fr; }
+  .section-events .events-header {
+    display: block;
+    margin: 0 auto;
+    width: 100%; }
+  .section-events .event-links {
+    background-repeat: no-repeat;
+    width: 25%;
+    background-position: center;
+    background-size: contain; }
+  .section-events .event-links:nth-child(2) {
+    background-image: url("../img/rome-thumb.jpg"); }
+  .section-events .event-links:nth-child(3) {
+    background-image: url("../img/egypt-thumb.jpg"); }
+  .section-events .event-links:nth-child(4) {
+    background-image: url("../img/ottoman-thumb.jpg"); }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <title>History Lessons</title>
+  </head>
+  <body>
+    <header class="header anim-on" id="header">
+      <div class="header__logo-box" id="logoBox">
+        <img src="img/logo.png" alt="logo" class="header__logo" />
+      </div>
+
+      <div class="burgerMenu">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+
+      <nav class="menu">
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="#header" class="menu__nav-link scroll"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="#history" class="menu__nav-link scroll"> History </a>
+          </li>
+          <li class="nav-item">
+            <a href="#achievements" class="menu__nav-link scroll">
+              Achievements
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="menu__nav-link scroll"> Donate </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main" id="headerAlt"
+            >Events that Made History</span
+          >
+          <span class="heading-primary--sub" id="headerAlt"
+            >An interactive guide</span
+          >
+        </h1>
+      </div>
+
+      <div class="learn-more btn-main">
+        <a href="#events" class="learn-more__link">
+          <h2 class="heading-secondary">Learn More</h2>
+        </a>
+      </div>
+
+      <!-- <input type="text" id="yearInput" class="header__year-input"></input>
+      <button type="button" onclick="calcYears()"class="header__btn" id="btnSubmit">Submit</button>
+      <p id="diffDisplay" class="header__answer-display"></p> -->
+    </header>
+
+    <section class="section-events" id="events">
+      <div class="events-header">
+        <h1 class="heading-primary--main">Major Historical Events</h1>
+      </div>
+      <div class="event-links"></div>
+      <div class="event-links"></div>
+      <div class="event-links"></div>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>
