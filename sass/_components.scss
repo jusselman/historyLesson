@@ -13,49 +13,18 @@
 }
 
 // animations //
+// .learn-more {
+//   transform: translate(-50%, -25%);
+// }
 
-// .anim-on,
-// .anim-out {
-//   position: relative;
-//   height: 100vh;
-//   width: 100%;
-//   overflow: hidden;
-// }
-// .anim-on:after,
-// .anim-out:after {
-//   position: absolute;
-//   content: '';
-//   height: 100%;
-//   width: 100%;
-//   top: 0px;
-//   left: 0px;
-//   background: url('../img/');
-// }
-// .anim-on:after {
-//   animation: shrink 12s infinite alternate;
-// }
-// .anim-out:after {
-//   animation: small 6s infinite alternate;
-// }
-// @keyframes shrink {
-//   0% {
-//     transform: scale(1.1);
-//   }
-//   100% {
-//     transform: scale(1);
-//   }
-// }
-// @keyframes small {
-//   0% {
-//     transform: scale(1);
-//   }
-//   100% {
-//     transform: scale(1.1);
-//   }
-// }
-// /* Just for demo */
-
-// // div {
-// //   float: left;
-// //   margin-right: 20px;
-// // }
+@keyframes floaty {
+  0% {
+    transform: translateY(0) translateX(-50%);
+  }
+  50% {
+    transform: translateY(-0.5rem) translateX(-50%);
+  }
+  100% {
+    transform: translateY(0) translateX(-50%);
+  }
+}
