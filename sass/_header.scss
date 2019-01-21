@@ -37,7 +37,7 @@
   }
 
   .burgerMenu {
-    position: absolute;
+    position: fixed;
     top: 5rem;
     right: 5rem;
     background-color: rgba(0, 0, 0, 0.5);
@@ -162,32 +162,6 @@
   }
   100% {
     transform: scale(1);
-  }
-}
-
-.bgTrans {
-  height: 95vh;
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  background-image: url('../img/rome-bg.jpg');
-  background-color: rgba(0, 0, 0, 0);
-  transition: all 5s ease;
-
-  &__logo-box {
-    position: absolute;
-    top: 5rem;
-    left: 5rem;
-  }
-  &__logo {
-    height: 4rem;
-  }
-  &__title-box {
-    position: relative;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
   }
 }
 

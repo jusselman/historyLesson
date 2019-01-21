@@ -35,3 +35,13 @@ function toggleMenu() {
     navItem.forEach(item => item.classList.remove('show'));
   }
 }
+
+var link1 = document.getElementById('linkOne');
+var eventBg = document.getElementById('events');
+var changeBg = function() {
+  eventBg.innerHTML.addClass('romeBg');
+};
+
+var changeBh = function() {
+  link1.addEventListener('onclick', changeBg);
+};

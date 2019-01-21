@@ -5,29 +5,44 @@
   background-color: #fff;
   color: #000;
   grid-template-rows: repeat(4, 1fr);
+  // grid-template-columns: repeat(2, 1fr) 50%;
   grid-row-gap: 2rem;
+  position: relative;
 
   .events-header {
-    display: block;
-    margin: 0 auto;
+    display: flex;
+    margin: 3.5rem auto;
     width: 100%;
+    text-align: center;
+    // top: 10%;
+    // position: absolute;
+    justify-content: center;
   }
 
   .event-links {
-    background-repeat: no-repeat;
+    // background-repeat: no-repeat;
     width: 25%;
-    // background-attachment: fixed;
+    // height: 100%;
+    background-attachment: fixed;
     background-position: center;
     background-size: contain;
   }
 
-  .event-links:nth-child(2) {
+  .event-links:hover {
+    border: 1px solid black;
+  }
+
+  .event-links:nth-child(3) {
     background-image: url('../img/rome-thumb.jpg');
   }
-  .event-links:nth-child(3) {
+  .event-links:nth-child(4) {
     background-image: url('../img/egypt-thumb.jpg');
   }
-  .event-links:nth-child(4) {
+  .event-links:nth-child(2) {
     background-image: url('../img/ottoman-thumb.jpg');
+  }
+
+  .romeBg {
+    background-image: url('../img/rome-bg.jpg');
   }
 }
