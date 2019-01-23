@@ -36,12 +36,18 @@ function toggleMenu() {
   }
 }
 
-var link1 = document.getElementById('linkOne');
-var eventBg = document.getElementById('events');
-var changeBg = function() {
-  eventBg.innerHTML.addClass('romeBg');
-};
+// var link1 = document.getElementById('linkOne');
+// var eventBg = document.getElementById('events');
+// var changeBg = function() {
+//   eventBg.innerHTML.addClass('romeBg');
+// };
 
-var changeBh = function() {
-  link1.addEventListener('onclick', changeBg);
-};
+// link1.addEventListener('onclick', changeBg);
+
+var eventsOne = document.getElementById('linkOne');
+
+eventsOne.addEventListener('click', displayRome());
+
+function displayRome() {
+  document.body.style.backgroundColor = 'red';
+}
