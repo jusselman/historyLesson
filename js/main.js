@@ -44,10 +44,27 @@ function toggleMenu() {
 
 // link1.addEventListener('onclick', changeBg);
 
+// DOMStrings //
 var eventsOne = document.getElementById('linkOne');
+var eventsTwo = document.getElementById('linkTwo');
+var eventsThree = document.getElementById('linkThree');
+var bgDisplay = document.getElementById('eventBg');
 
-eventsOne.addEventListener('click', displayRome());
+eventsOne.addEventListener('click', displayRome);
+eventsTwo.addEventListener('click', displayEgypt);
+eventsThree.addEventListener('click', displayOttoman);
 
 function displayRome() {
-  document.body.style.backgroundColor = 'red';
+  document.getElementById('eventBg').style.backgroundImage =
+    "url('../img/egypt-bg.jpg')";
+}
+
+function displayEgypt() {
+  document.getElementById('eventBg').style.backgroundImage =
+    "url('../img/rome-bg.jpg')";
+}
+
+function displayOttoman() {
+  document.getElementById('eventBg').style.backgroundImage =
+    "url('../img/ottoman-bg.jpg')";
 }

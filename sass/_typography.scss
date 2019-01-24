@@ -35,9 +35,24 @@
     //   letter-spacing: 0.5rem;
   }
 
+  &-primary--display {
+    padding-top: 5rem;
+    font-size: 5rem;
+    text-align: center;
+    color: #fff;
+  }
+
   &-secondary {
     margin: 0 auto;
     padding: 1rem;
     text-align: center;
   }
+
+  &-secondary--display {
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+  }
 }
+
+// Events Section //
